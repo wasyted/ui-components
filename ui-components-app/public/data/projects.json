@@ -1,0 +1,46 @@
+{
+  "projects": {
+    "fullstack": 
+       [
+        {
+          "name": "noteblndr",
+          "image": "/snapshots/notebnldr.png",
+          "progress": 77
+        }
+      ],
+      "frontend":[
+        {
+          "name": "laloamasa",
+          "image": "/snapshots/laloamasa.png",
+          "progress": 33
+        },
+        {
+          "name": "hurynWeb",
+          "image": "/snapshots/hurynweb.png",
+          "progress": 95
+        },
+        {
+          "name": "Matias Wasyluk",
+          "image": "/snapshots/matiaswasyluk.png",
+          "progress": 80
+        }
+      ],
+      "UI/UX": [
+        {
+          "name": "laloamasa",
+          "image": "/snapshots/laloamasa.png",
+          "progress": 33
+        },
+        {
+          "name": "hurynWeb",
+          "image": "/snapshots/hurynweb.png",
+          "progress": 95
+        },
+        {
+          "name": "Matias Wasyluk",
+          "image": "/snapshots/matiaswasyluk.png",
+          "progress": 80
+        }
+      ]
+    }
+  }
