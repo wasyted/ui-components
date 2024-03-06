@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
+import { Albert_Sans } from "next/font/google";
 
-const openSans = Open_Sans({ subsets: ["latin"], weight: '400' });
+const text = Albert_Sans({ subsets: ["latin"], weight: 'variable' });
 
 export const metadata: Metadata = {
-  title: "React UI",
+  title: "Ecommerce",
   description: "Created by Matías Wasyluk",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${text.className}`}>
         {children}
       </body>
     </html>

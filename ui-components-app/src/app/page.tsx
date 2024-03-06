@@ -1,9 +1,12 @@
-// Interactive Dashboard: 
-// Create a visually appealing dashboard using React and TailwindCSS to display various metrics or data points. Utilize TailwindCSS for rapid styling and responsiveness. Incorporate interactive elements such as charts, graphs, and draggable components to allow users to customize their dashboard layout and view data in real-time.
+import Link from "next/link";
 
 export default function Home() {
   return (
-      <main className="p-8 w-full">
+      <main>
+        <div className="flex items-center justify-center p-8 w-full gap-x-2 min-h-screen transition-all">
+          <Link className="hover:text-6xl hover:font-extrabold" href='/dashboard'>Dashboard</Link>
+          <Link className="hover:text-6xl hover:font-extrabold" href='/ecommerce'>Ecommerce</Link>
+        </div>
       </main>
     );
 }

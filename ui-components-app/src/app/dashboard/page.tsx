@@ -57,7 +57,7 @@ export default function Home() {
       <div className="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
         {loading ? (
           // Mostrar un esqueleto mientras se carga la data
-          Array.from({ length: 6 }).map((_, index) => (
+          Array.from({ length: 3 }).map((_, index) => (
             <ShortcutCardSkeleton key={index} />
           ))
         ) : (

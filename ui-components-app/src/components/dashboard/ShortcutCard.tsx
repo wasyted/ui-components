@@ -12,10 +12,8 @@ export default function ShortcutCard({workgroupImage, workgroupName} : ShortcutC
       <div className="absolute top-0 left-0 right-0 bottom-0 z-10 opacity-50">
         <Image width={1280} height={800} alt={'project-image'} src={workgroupImage}/>
       </div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-black/50 w-full">
-      </div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-20 flex items-center justify-center w-full h-full">
-        <p className="text-xl drop-shadow-lg">
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-20 flex items-center justify-center w-full h-full backdrop-blur-sm bg-black/50 text-xl hover:text-3xl hover:backdrop-blur-none transition-all">
+        <p className="drop-shadow-lg">
           {workgroupName}
         </p>
       </div>
