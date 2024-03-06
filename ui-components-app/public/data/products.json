@@ -1,0 +1,140 @@
+{
+  "products":[
+    {
+      "id": 1,
+      "name": "Viper Gaming PC Prebuilt",
+      "image": "https://viperpc.in/wp-content/uploads/2023/09/NESO_P1_B_Slogan.png",
+      "reviewAmount": 12,
+      "rating": 4,
+      "price": 1999
+    },
+    {
+      "id": 2,
+      "name": "Macbook Pro M2 2022",
+      "image": "https://istore.gt/wp-content/uploads/2022/08/EC00029ii2.jpg",
+      "reviewAmount": 152,
+      "rating": 5,
+      "price": 2600
+    },
+    {
+      "id": 3,
+      "name": "Microsoft Surface Pro+ 7",
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-RWGaM8-Surface-Pro-7-in-Laptop-Mode:VP5-1920x1080?fmt=png-alpha",
+      "reviewAmount": 33,
+      "rating": 5,
+      "price": 1200
+    },
+    {
+      "id": 4,
+      "name": "Google Chromebook 2020",
+      "image": "https://www.intel.la/content/dam/www/central-libraries/us/en/images/2022-08/chromebook-product-image-transparent-background.png.rendition.intel.web.480.270.png",
+      "reviewAmount": 50,
+      "rating": 3,
+      "price": 800
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi 13T",
+      "image": "https://i02.appmifile.com/873_operator_sg/07/09/2023/5a10bf93ef240e4d27795744001c8ee2.png",
+      "reviewAmount": 220,
+      "rating": 4,
+      "price": 399
+    },
+    {
+      "id": 6,
+      "name": "Iphone 15 Pro Max",
+      "image": "https://toppng.com/uploads/preview/apple-iphone-15-pro-max-blue-titanium-png-11695041031ourm0vm8uy.png",
+      "reviewAmount": 411,
+      "rating": 5,
+      "price": 1200
+    },
+    {
+      "id": 7,
+      "name": "Samsung Galaxy S23 Ultra",
+      "image": "https://www.pngall.com/wp-content/uploads/13/Galaxy-S23-Ultra-PNG-Free-Image.png",
+      "reviewAmount": 362,
+      "rating": 5,
+      "price": 999
+    },
+    {
+      "id": 8,
+      "name": "VSG Quasar Mechanical Keyboard 60%",
+      "image": "https://ar.vsglatam.com/cdn/shop/products/Quasar-RGB_01_900x900.png?v=1659476941",
+      "reviewAmount": 9,
+      "rating": 4,
+      "price": 90
+    },
+    {
+      "id": 9,
+      "name": "Logitech G502 Gaming Mouse",
+      "image": "https://resource.logitech.com/content/dam/gaming/en/products/g502x-plus/gallery/g502x-plus-gallery-1-black.png",
+      "reviewAmount": 55,
+      "rating": 5,
+      "price": 150
+    },
+    {
+      "id": 10,
+      "name": "Viper Gaming PC Prebuilt",
+      "image": "https://viperpc.in/wp-content/uploads/2023/09/NESO_P1_B_Slogan.png",
+      "reviewAmount": 12,
+      "rating": 4,
+      "price": 1999
+    },
+    {
+      "id": 11,
+      "name": "Asus TUF 27inch 144Hz Gaming Monitor",
+      "image": "https://www.gigahertz.com.ph/cdn/shop/products/hhdxa6vxaje4n3lg_setting_xxx_0_90_end_800_1024x.png?v=1680492413",
+      "reviewAmount": 42,
+      "rating": 5,
+      "price": 300
+    },
+    {
+      "id": 17,
+      "name": "Sony PlayStation 5 Slim",
+      "image": "/ps5.png",
+      "reviewAmount": 1042,
+      "rating": 5,
+      "price": 800
+    },
+    {
+      "id": 12,
+      "name": "Samsung Galaxy Watch 4",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/2108/gallery/ar-galaxy-watch4-sm-r860nzkaaro-481110926?$650_519_PNG$",
+      "reviewAmount": 61,
+      "rating": 5,
+      "price": 280
+    },
+    {
+      "id": 13,
+      "name": "Nikon D6 Digital Camera",
+      "image": "https://www.kenrockwell.com/nikon/images1/d6/1200.jpg",
+      "reviewAmount": 5,
+      "rating": 4,
+      "price": 500
+    },
+    {
+      "id": 14,
+      "name": "Asus TUF 27inch 144Hz Gaming Monitor",
+      "image": "https://www.gigahertz.com.ph/cdn/shop/products/hhdxa6vxaje4n3lg_setting_xxx_0_90_end_800_1024x.png?v=1680492413",
+      "reviewAmount": 42,
+      "rating": 5,
+      "price": 300
+    },
+    {
+      "id": 15,
+      "name": "Samung 50inch Smart TV HD4K Wi-Fi",
+      "image": "https://images.samsung.com/is/image/samsung/co-uhdtv-nu7100-un50nu7100kxzl-frontblack-102847117?$624_624_PNG$",
+      "reviewAmount": 70,
+      "rating": 5,
+      "price": 2000
+    },
+    {
+      "id": 16,
+      "name": "AKG K72 Stereo Headphones Black",
+      "image": "https://audioimport.com.ar/wp-content/uploads/2020/06/AKG_K72_SideAngle.png",
+      "reviewAmount": 3,
+      "rating": 4,
+      "price": 62
+    }
+  ]
+}

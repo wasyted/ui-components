@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Banner3(){
   return(
-    <div className="flex items-center justify-between w-full mx-auto rounded-md max-w-md sm:max-w-xl md:max-w-6xl min-h-96 text-zinc-700 bg-zinc-100 relative overflow-hidden bg-pink-200">
+    <div className="flex items-center justify-between w-full mx-auto px-2 rounded-md max-w-md sm:max-w-xl md:max-w-6xl sm:min-h-96 text-zinc-700 bg-gradient-to-br from-rose-200 to-pink-200 relative overflow-hidden bg-pink-200">
       <div className="flex-1 z-10">
         <div className="max-w-md flex flex-col items-start justify-center p-4 sm:p-8 gap-2 sm:gap-6 ml-auto">
           <div className="flex items-center gap-x-2">
@@ -24,7 +24,7 @@ export default function Banner3(){
           </div>
         </div>
       </div>
-      <div className="flex-1 flex items-center justify-start z-10">
+      <div className="hidden flex-1 sm:flex items-center justify-start z-10">
         <Image className='max-h-72 w-auto' width={485} height={578} alt={'product image'} src={'/ps5.png'}></Image>
       </div>
     </div>

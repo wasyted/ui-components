@@ -9,7 +9,9 @@ export default function Home() {
   return (
       <main>
         <Header />
-        <BannerCarrousel />
+        <div className="bg-slate-100 p-2">
+          <BannerCarrousel />
+        </div>
         <div className="p-4 max-w-6xl mx-auto overflow-hidden">
           <Categories />
           <Products />
