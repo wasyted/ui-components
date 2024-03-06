@@ -14,7 +14,7 @@ export default function Banner(){
             <p className="text-rose-500/75 font-bold text-xs sm:text-sm">Top Product Of The month</p>
           </div>
           <div>
-            <h1 className="text-xl sm:text-4xl font-bold sm:max-w-sm text-black">AKG K72 Stereo Headphones Black</h1>
+            <h1 className="text-xl sm:text-4xl font-bold sm:max-w-md text-black">AKG K72 Stereo Headphones Black</h1>
           </div>
           <div>
             <h1 className="text-xs sm:text-md max-w-sm">The AKG K72 Stereo Headphones comes with 3.5mm jack, volumen control, incorporated mic and adjustable headband.</h1>

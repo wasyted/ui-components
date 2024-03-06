@@ -12,7 +12,7 @@ import "@egjs/flicking-plugins/dist/arrow.css";
 
 export default () => {
   const [panels, setPanels] = useState([<Banner />, <Banner1 />, <Banner2 />, <Banner />, <Banner1 />, <Banner2 />]);
-  const plugins = [new AutoPlay({ duration: 5000, direction: "NEXT", stopOnHover: false }), new Arrow()];
+  const plugins = [new AutoPlay({ duration: 4000, direction: "NEXT", stopOnHover: false }), new Arrow()];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default () => {
           <div
             className="rounded-lg flex items-center justify-center mx-2 flicking-panel transition-all"
             key={index}
-            style={{ opacity: index === currentIndex ? 1 : 0.25 }} // Adjust opacity based on visibility
+            style={{ opacity: index === currentIndex ? 1 : 0.25 , filter: index === currentIndex ? 'blur(0)' : 'blur(1px)'}} // Adjust opacity based on visibility
           >
             {panel}
           </div>
