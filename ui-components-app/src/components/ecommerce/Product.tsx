@@ -8,6 +8,7 @@ interface ProductCardProps {
   productPrice: number;
   productReviews: number;
   productId: number;
+  productDiscount: number | null;
 }
 
 interface ProductCardWideProps {
@@ -17,28 +18,36 @@ interface ProductCardWideProps {
   productPrice: number;
   productReviews: number;
   productId: number;
+  productDiscount: number | null;
 }
 
-export default function ProductCard({ productName, productImage, productRating, productPrice, productReviews, productId }: ProductCardProps) {
+export default function ProductCard({ productName, productImage, productRating, productPrice, productReviews, productId, productDiscount }: ProductCardProps) {
   return (
     <div className="w-36 sm:w-72 sm:p-4 gap-1 text-sm relative mb-3 sm:mb-0">
+      {productDiscount != null ? <div className="absolute top-6 right-6 bg-orange-400 p-1 text-xs text-white font-bold rounded-full">{productDiscount * 100}% OFF</div> : null}
       <div className="flex items-center justify-start w-full max-w-full p-2 mb-1 gap-x-1 h-40 sm:h-64 rounded-sm bg-slate-100 overflow-hidden mb-1">
         <Image className="w-3/4 mx-auto" width={300} height={300} alt={'product image'} src={productImage}></Image>
       </div>
       <p className="text-zinc-500 truncate">{productName}</p>
       <div className="flex items-center justify-start w-full mb-1">
-        {[...Array(productRating)].map((_, index) => (
+        {[...Array(Math.floor(productRating))].map((_, index) => (
           <Star key={index} className="text-sm" />
         ))}
       </div>
       <div className="flex items-center justify-start w-full">
-        <p className="font-bold">${productPrice.toFixed(2)}</p>
+          {productDiscount ? 
+          <div className="flex items-center gap-x-1">
+            <p className="font-bold">${(productPrice - (productDiscount * productPrice)).toFixed(2)}</p>
+            <p className="text-zinc-500 text-xs line-through">${productPrice.toFixed(2)}
+            </p>  
+          </div> : 
+          <p className="font-bold">${productPrice.toFixed(2)}</p>}
       </div>
     </div>
   );
 }
 
-export function ProductCardWide({ productName, productImage, productRating, productPrice, productReviews, productId }: ProductCardProps){
+export function ProductCardWide({ productName, productImage, productRating, productPrice, productReviews, productId, productDiscount}: ProductCardWideProps){
   return(
     <div className="flex items-center justify-start w-full gap-x-4 border p-2">
       <div className="h-32 w-32 p-2 flex items-center justify-center rounded-sm bg-slate-100">
@@ -47,7 +56,7 @@ export function ProductCardWide({ productName, productImage, productRating, prod
       <div>
         <p className="text-zinc-500 truncate">{productName}</p>
         <div className="flex items-center justify-start w-full mb-1">
-          {[...Array(productRating)].map((_, index) => (
+          {[...Array(Math.floor(productRating))].map((_, index) => (
             <Star key={index} className="text-sm" />
           ))}
         </div>

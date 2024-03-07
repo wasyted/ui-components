@@ -44,6 +44,7 @@ export default function Products(){
               productPrice={product.price}
               productRating={product.rating}
               productReviews={product.reviews}
+              productDiscount={product.discount}
             />
           ))
         )}

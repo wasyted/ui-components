@@ -30,7 +30,8 @@
       "image": "https://www.intel.la/content/dam/www/central-libraries/us/en/images/2022-08/chromebook-product-image-transparent-background.png.rendition.intel.web.480.270.png",
       "reviewAmount": 50,
       "rating": 3,
-      "price": 800
+      "price": 800,
+      "discount": 0.50
     }
   ],
   "cellphone": [
@@ -74,7 +75,8 @@
       "image": "https://resource.logitech.com/content/dam/gaming/en/products/g502x-plus/gallery/g502x-plus-gallery-1-black.png",
       "reviewAmount": 55,
       "rating": 5,
-      "price": 150
+      "price": 150,
+      "discount": 0.10
     },
     {
       "id": 10,
@@ -134,11 +136,12 @@
   "tv": [
     {
       "id": 15,
-      "name": "Samung 50inch Smart TV HD4K Wi-Fi",
+      "name": "Samsung 50inch Smart TV HD4K Wi-Fi",
       "image": "https://images.samsung.com/is/image/samsung/co-uhdtv-nu7100-un50nu7100kxzl-frontblack-102847117?$624_624_PNG$",
       "reviewAmount": 70,
       "rating": 5,
-      "price": 2000
+      "price": 2000,
+      "discount": 0.25
     }
   ],
   "headphones": [
