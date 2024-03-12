@@ -4,11 +4,13 @@ import { ArrowCircleDown, ArrowDownwardOutlined, ArrowDropDown, Menu, Person, Se
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
+import CategoryDropdown from "./CategoryDropdown"
 
 
 export default function Header(){
   const [ isScrolled, setScrolled ] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = () => {
     const currentScrollY = window.pageYOffset;
@@ -21,6 +23,10 @@ export default function Header(){
 
     setLastScrollY(currentScrollY);
   };
+
+  const openMenu = () =>{
+    setIsOpen(!isOpen)
+  }
 
   useEffect(() => {
     // Adding the scroll listener
@@ -43,10 +49,10 @@ export default function Header(){
           </div>
           <p className="hidden sm:block font-black ">Shoppy</p>
         </div>
-        <div className="flex items-center gap-x-2 w-full max-w-sm hidden sm:block">
-              <SearchRounded />
-              <input placeholder="Search products..." className='border px-2 py-1 rounded-md' type="text" name="" id="" />
-          </div>
+        <div className="items-center justify-center gap-x-2 w-full max-w-lg hidden sm:flex">
+          <SearchRounded />
+          <input placeholder="Search products..." className='w-full border px-2 py-1 rounded-md' type="text" name="" id="" />
+        </div>
         <div className="flex items-center justify-end gap-x-2 flex-1">
           <div className="relative">
             <Link href={'/cart'}>
@@ -63,16 +69,17 @@ export default function Header(){
       </div>
       <nav className="flex items-center justify-between bg-orange-300 text-white py-1 font-bold">
         <div className="flex gap-x-4 pl-2">
-          <div className='p-1'>
-            <button className="flex items-center justify-start gap-x-2 p-1 pl-2 border border-white w-40 sm:w-52 font-normal"><ArrowDropDown />Categories</button>
+          <div className='p-1 relative'>
+            <button onClick={openMenu} className="flex items-center justify-start gap-x-2 p-1 pl-2 border border-white w-40 sm:w-52 font-normal"><ArrowDropDown />Categories</button>
+            <CategoryDropdown isOpen={isOpen} />
           </div>
           <div className='flex items-center justify-start'>
             <ul className="sm:flex items-center justify-start gap-x-6 hidden">
               <li><Link href={'/ecommerce'}>Home</Link></li>
-              <li><Link href={'/ecommerce'}>Arrivals</Link></li>
-              <li><Link href={'/ecommerce'}>Offers</Link></li>
-              <li><Link href={'/ecommerce'}>FAQ</Link></li>
-              <li><Link href={'/ecommerce'}>Contact</Link></li>
+              <li><Link href={'/ecommerce/arrivals'}>Arrivals</Link></li>
+              <li><Link href={'/ecommerce/offers'}>Offers</Link></li>
+              <li><Link href={'/ecommerce/faq'}>FAQ</Link></li>
+              <li><Link href={'/ecommerce/contact'}>Contact</Link></li>
             </ul>
           </div>
         </div>
@@ -80,6 +87,7 @@ export default function Header(){
           Free shiping on $50+ orders
         </p>
       </nav>
+
     </header>
   )
 }

@@ -8,7 +8,6 @@ import Banner3 from "@/components/ecommerce/Banner3";
 export default function Home() {
   return (
       <main>
-        <Header />
         <div className="bg-slate-100 p-2">
           <BannerCarrousel />
         </div>

@@ -6,7 +6,8 @@
       "image": "https://viperpc.in/wp-content/uploads/2023/09/NESO_P1_B_Slogan.png",
       "reviewAmount": 12,
       "rating": 3.5,
-      "price": 1999
+      "price": 1999,
+      "category": "computer"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "image": "https://istore.gt/wp-content/uploads/2022/08/EC00029ii2.jpg",
       "reviewAmount": 152,
       "rating": 5,
-      "price": 2600
+      "price": 2600,
+      "category": "computer"
     },
     {
       "id": 3,
@@ -23,7 +25,8 @@
       "reviewAmount": 33,
       "rating": 5,
       "price": 1200,
-      "discount": 0.05
+      "discount": 0.05,
+      "category": "computer"
     },
     {
       "id": 4,
@@ -32,7 +35,8 @@
       "reviewAmount": 50,
       "rating": 3,
       "price": 800,
-      "discount": 0.50
+      "discount": 0.50,
+      "category": "computer"
     },
     {
       "id": 5,
@@ -40,7 +44,8 @@
       "image": "https://i02.appmifile.com/873_operator_sg/07/09/2023/5a10bf93ef240e4d27795744001c8ee2.png",
       "reviewAmount": 220,
       "rating": 4,
-      "price": 399
+      "price": 399,
+      "category": "phone"
     },
     {
       "id": 6,
@@ -48,7 +53,8 @@
       "image": "https://toppng.com/uploads/preview/apple-iphone-15-pro-max-blue-titanium-png-11695041031ourm0vm8uy.png",
       "reviewAmount": 411,
       "rating": 5,
-      "price": 1200
+      "price": 1200,
+      "category": "phone"
     },
     {
       "id": 7,
@@ -56,7 +62,8 @@
       "image": "https://www.pngall.com/wp-content/uploads/13/Galaxy-S23-Ultra-PNG-Free-Image.png",
       "reviewAmount": 362,
       "rating": 5,
-      "price": 999
+      "price": 999,
+      "category": "phone"
     },
     {
       "id": 8,
@@ -64,7 +71,8 @@
       "image": "https://ar.vsglatam.com/cdn/shop/products/Quasar-RGB_01_900x900.png?v=1659476941",
       "reviewAmount": 9,
       "rating": 4,
-      "price": 90
+      "price": 90,
+      "category": "gaming"
     },
     {
       "id": 9,
@@ -73,7 +81,8 @@
       "reviewAmount": 55,
       "rating": 5,
       "price": 150,
-      "discount": 0.10
+      "discount": 0.10,
+      "category": "gaming"
     },
     {
       "id": 11,
@@ -81,7 +90,8 @@
       "image": "https://www.gigahertz.com.ph/cdn/shop/products/hhdxa6vxaje4n3lg_setting_xxx_0_90_end_800_1024x.png?v=1680492413",
       "reviewAmount": 42,
       "rating": 5,
-      "price": 300
+      "price": 300,
+      "category": "gaming"
     },
     {
       "id": 17,
@@ -89,7 +99,8 @@
       "image": "/ps5.png",
       "reviewAmount": 1042,
       "rating": 5,
-      "price": 800
+      "price": 800,
+      "category": "gaming"
     },
     {
       "id": 12,
@@ -97,7 +108,8 @@
       "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/2108/gallery/ar-galaxy-watch4-sm-r860nzkaaro-481110926?$650_519_PNG$",
       "reviewAmount": 61,
       "rating": 5,
-      "price": 280
+      "price": 280,
+      "category": "watch"
     },
     {
       "id": 13,
@@ -105,7 +117,8 @@
       "image": "https://www.kenrockwell.com/nikon/images1/d6/1200.jpg",
       "reviewAmount": 5,
       "rating": 4,
-      "price": 500
+      "price": 500,
+      "category": "camera"
     },
     {
       "id": 14,
@@ -113,7 +126,8 @@
       "image": "https://www.gigahertz.com.ph/cdn/shop/products/hhdxa6vxaje4n3lg_setting_xxx_0_90_end_800_1024x.png?v=1680492413",
       "reviewAmount": 42,
       "rating": 5,
-      "price": 300
+      "price": 300,
+      "category": "tv"
     },
     {
       "id": 15,
@@ -122,7 +136,8 @@
       "reviewAmount": 70,
       "rating": 5,
       "price": 2000,
-      "discount": 0.25
+      "discount": 0.25,
+      "category": "tv"
     },
     {
       "id": 16,
@@ -130,7 +145,8 @@
       "image": "https://audioimport.com.ar/wp-content/uploads/2020/06/AKG_K72_SideAngle.png",
       "reviewAmount": 3,
       "rating": 4,
-      "price": 62
+      "price": 62,
+      "category": "headphone"
     }
   ]
 }

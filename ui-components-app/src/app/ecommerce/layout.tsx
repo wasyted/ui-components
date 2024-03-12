@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { Albert_Sans } from "next/font/google";
+import Header from "@/components/ecommerce/Header";
 
 const text = Albert_Sans({ subsets: ["latin"], weight: 'variable' });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${text.className}`}>
+        <Header />
         {children}
       </body>
     </html>
