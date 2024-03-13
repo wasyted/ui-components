@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import ProductCard from "./Product";
 import ProductCardSkeleton from "./ProductSkeleton";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 export default function Products(){
   const [products, setProducts] = useState([]);

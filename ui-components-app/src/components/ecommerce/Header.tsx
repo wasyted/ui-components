@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowCircleDown, ArrowDownwardOutlined, ArrowDropDown, Menu, Person, SearchRounded, ShoppingCart } from "@mui/icons-material"
+import { ArrowDropDown, Menu, Person, SearchRounded, ShoppingCart } from "@mui/icons-material"
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
@@ -13,7 +13,7 @@ export default function Header(){
   const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = () => {
-    const currentScrollY = window.pageYOffset;
+    const currentScrollY = window.scrollY;
 
     if (currentScrollY >= 250 && currentScrollY >= lastScrollY) {
       setScrolled(true);

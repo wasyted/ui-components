@@ -146,7 +146,8 @@
       "reviewAmount": 3,
       "rating": 4,
       "price": 62,
-      "category": "headphone"
+      "category": "headphone",
+      "discount": 0.10
     }
   ]
 }
