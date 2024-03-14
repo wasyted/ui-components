@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "@/app/globals.css";
 import { Albert_Sans } from "next/font/google";
 import Header from "@/components/ecommerce/Header";
 

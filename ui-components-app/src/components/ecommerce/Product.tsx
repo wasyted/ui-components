@@ -67,3 +67,27 @@ export function ProductCardWide({ productName, productImage, productRating, prod
     </div>
   )
 }
+
+export function ProductDescription({productName, productRating, productReviews, productDiscount, productId, productImage, productPrice} : ProductCardProps){
+  return(
+    <div>
+      <p className="text-zinc-800 text-2xl">{productName}</p>
+      <div className="flex items-center justify-start w-full mb-1">
+        <p className="mr-2">{productReviews} reviews</p>
+        {[...Array(Math.floor(productRating))].map((_, index) => (
+          <Star key={index} className="text-sm" />
+        ))}
+        <p className="ml-2">{productRating.toFixed(1)}/5.0</p>
+      </div>
+      <div className="flex items-center justify-start w-full">
+          {productDiscount ? 
+          <div className="flex items-center gap-x-1 ">
+            <p className="text-2xl font-bold">${(productPrice - (productDiscount * productPrice)).toFixed(2)}</p>
+            <p className="text-zinc-500 text-md line-through">${productPrice.toFixed(2)}
+            </p>  
+          </div> : 
+          <p className="text-2xl font-bold">${productPrice.toFixed(2)}</p>}
+      </div>
+    </div>
+  )
+}

@@ -1,14 +1,17 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import ProductCard from "./Product";
+import ProductCard, { Gallery, ProductDescription } from "./Product";
 import ProductCardSkeleton from "./ProductSkeleton";
 import { useSearchParams } from "next/navigation";
+import { ButtonBlue } from "../home/Button";
+import CategoryHeader from "./CategoryHeader";
 
 export default function Products(){
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState(''); 
+  const [selectedCategory, setSelectedCategory] = useState('Featured Products'); 
+  const categoryParam = useSearchParams().get("category");
 
   useEffect(() => {
     async function fetchData() {
@@ -18,9 +21,8 @@ export default function Products(){
           throw new Error('Failed to fetch data');
         }
         const data = await res.json();
-        const categoryParam = useSearchParams().get("category");
         if(categoryParam){
-          setSelectedCategory(categoryParam);
+          setSelectedCategory(`${categoryParam}s`);
           setProducts(data.products.filter((p:any) => p.category === categoryParam));
         } else {
           setProducts(data.products);
@@ -32,11 +34,12 @@ export default function Products(){
       }
     }
     fetchData();
-  }, []);
+  }, [categoryParam]);
   
   return(
     <div>
-      <p className="capitalize text-2xl p-8 pl-0 font-bold">{selectedCategory}</p>
+
+      <CategoryHeader selectedCategory={selectedCategory}/>
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center max-w-6xl mx-auto">
         {loading ? (
           Array.from({ length: 8 }).map((_, index) => (

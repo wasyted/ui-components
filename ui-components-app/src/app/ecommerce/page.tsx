@@ -8,9 +8,7 @@ import Banner3 from "@/components/ecommerce/Banner3";
 export default function Home() {
   return (
       <main>
-        <div className="bg-slate-100 p-2">
-          <BannerCarrousel />
-        </div>
+        <BannerCarrousel />
         <div className="p-4 max-w-6xl mx-auto overflow-hidden">
           <Categories />
           <Products />

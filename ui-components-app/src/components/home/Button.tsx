@@ -14,7 +14,7 @@ export function ButtonBlue({text, size, handleClick} : ButtonProps) {
 
 export function ButtonBlack({text, size, handleClick} : ButtonProps) {
   return (
-    <button onClick={handleClick} className={`bg-black ${size === 'large' ? 'px-10' : ''} ${size === 'normal' ? 'px-4' : ''} ${size === 'full' ? 'w-full p-4' : ''} text-white px-4 py-1.5 rounded-full shadow-md transition-all hover:border hover:border-white hover:bg-white`}>{text}</button>
+    <button onClick={handleClick} className={`bg-black ${size === 'large' ? 'px-10' : ''} ${size === 'normal' ? 'px-4' : ''} ${size === 'full' ? 'w-full p-4' : ''} text-white px-4 py-1.5 rounded-full shadow-md transition-all border border-transparent hover:text-black hover:border hover:border-white hover:bg-white`}>{text}</button>
   )
 }
 
