@@ -9,6 +9,7 @@ import Modal from "@/components/home/Modal";
 import Tooltip from "@/components/home/Tooltip";
 import ProductCardSkeleton from "@/components/ecommerce/ProductSkeleton";
 import Breadcrumbs from "@/components/home/Breadcrumbs";
+import Image from "next/image";
 
 export default function Home() {
   const [skeletonVisible, setSkeletonVisible] = useState(false);
@@ -41,10 +42,10 @@ export default function Home() {
         <div className="bg-gradient-to-tr from-zinc-50/75 to-white/75 col-span-2 bg-white rounded-lg min-h-72 shadow-md flex items-center justify-between gap-x-4 p-6 flex-col">
           <p className="font-bold">Interactive Buttons</p>
           <div className="flex-1 flex items-center justify-center gap-x-4 p-2">
-            <ButtonBlue handleClick={undefined} text="Click here to sign-up" size="large"/>
-            <ButtonRed handleClick={openModal} text="Delete" size="large"/>
+            <ButtonBlue handleClick={undefined} text="Click here to sign-up" size="large" />
+            <ButtonRed handleClick={openModal} text="Delete" size="large" />
             <div className="relative" onMouseEnter={showTooltip} onMouseLeave={showTooltip}>
-              <ButtonYellow handleClick={undefined} text="Warning" size="large"/>
+              <ButtonYellow handleClick={undefined} text="Warning" size="large" />
               <Tooltip text={'This is a tooltip!'} isVisible={tooltipVisible} />
             </div>
           </div>
@@ -56,14 +57,14 @@ export default function Home() {
               <ProductCardSkeleton />
             </div>
             <div className={`${skeletonVisible ? 'hidden' : 'block'}`}>
-              <ProductCard productName="AKG K72 Stereo Headphones Black" productId={16} productDiscount={0.10} productImage="https://audioimport.com.ar/wp-content/uploads/2020/06/AKG_K72_SideAngle.png" productPrice={62} productRating={5} productReviews={10}/>
+              <ProductCard productName="AKG K72 Stereo Headphones Black" productId={16} productDiscount={0.10} productImage="https://audioimport.com.ar/wp-content/uploads/2020/06/AKG_K72_SideAngle.png" productPrice={62} productRating={5} productReviews={10} />
             </div>
           </div>
           <p className="text-zinc-300">Hover to toggle suspense</p>
         </div>
         <div className="bg-gradient-to-tr from-zinc-50/75 to-white/75 col-span-1 bg-white rounded-lg min-h-72 shadow-md flex items-center justify-between p-6 flex-col">
           <div className="flex-1 flex items-start justify-center gap-x-4 p-2">
-            <Dropdown text='Navigation Links'/>
+            <Dropdown text='Navigation Links' />
           </div>
           <p className="font-bold">Dropdown Menu</p>
         </div>
@@ -74,14 +75,25 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-gradient-to-tr from-zinc-50/75 to-white/75 col-span-1 bg-white rounded-lg min-h-72 shadow-md">
-        
+          <div className="flex items-center justify-center p-8 w-full gap-x-2 transition-all">
+            <Link className="font-bold text-center" href='/ecommerce'>Ecommerce template
+            <div className="mt-3 flex items-center justify-start w-full max-w-full mb-1 gap-x-1 h-40 sm:h-64 rounded-sm bg-slate-100 overflow-hidden mb-1">
+              <Image className="transition-all hover:scale-105 rounded-lg w-3/4 mx-auto" width={400} height={400} alt={'product image'} src={"/Macbook-Air-localhost (9).png"}></Image>
+            </div>
+            </Link>
+          </div>
+        </div>
+        <div className="bg-gradient-to-tr from-zinc-50/75 to-white/75 col-span-1 bg-white rounded-lg min-h-72 shadow-md">
+          <div className="flex flex-col items-center justify-center p-8 w-full gap-x-2 transition-all ">
+            <Link className="font-bold text-center " href='/dashboard'>Dashboard template
+            <div className="mt-3 flex items-center justify-start w-full max-w-full mb-1 gap-x-1 h-40 sm:h-64 rounded-sm bg-slate-100 overflow-hidden mb-1">
+              <Image className="transition-all hover:scale-105 rounded-lg w-3/4 mx-auto" width={400} height={400} alt={'product image'} src={"/Macbook-Air-localhost (7).png"}></Image>
+            </div>
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="flex items-center justify-center p-8 w-full gap-x-2 transition-all">
-        <Link className="hover:text-6xl hover:font-extrabold" href='/dashboard'>Dashboard</Link>
-        <Link className="hover:text-6xl hover:font-extrabold" href='/ecommerce'>Ecommerce</Link>
-      </div>
-      <Modal isVisible={modalVisible} handleClick={openModal}/>
+      <Modal isVisible={modalVisible} handleClick={openModal} />
     </div>
-    );
+  );
 }
