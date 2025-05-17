@@ -11,7 +11,7 @@ import ProductCardSkeleton from "@/components/ecommerce/ProductSkeleton";
 import Breadcrumbs from "@/components/home/Breadcrumbs";
 import Image from "next/image";
 
-export default function Home() {
+export default function Page() {
   const [skeletonVisible, setSkeletonVisible] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [tooltipVisible, setTooltipVisible] = useState(false);
@@ -34,8 +34,10 @@ export default function Home() {
           An opinionated collection of various components with common props for your Next.js project.
         </p>
         <div className="mt-5 flex items-center gap-x-4">
-          <button className="flex items-center gap-x-2 hover:border hover:border-black bg-black text-white px-4 py-1.5 rounded-full hover:bg-white hover:text-zinc-500 shadow-md transition-all"><GitHub /> Code</button>
-          <button className="bg-white text-black px-4 py-1.5 rounded-full hover:border-black border shadow-md transition-all">See all live versions</button>
+          <button className="flex items-center gap-x-2 hover:border hover:border-black bg-black text-white px-4 py-1.5 rounded-full hover:bg-zinc-800 border border-transparent shadow-md transition-all"><GitHub /> Code</button>
+          <div className="bg-white rounded-full p-1">
+            <Dropdown text='Templates' />
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-3 grid-rows-2 p-6 gap-4 max-w-6xl mx-auto mt-5">
@@ -57,7 +59,7 @@ export default function Home() {
               <ProductCardSkeleton />
             </div>
             <div className={`${skeletonVisible ? 'hidden' : 'block'}`}>
-              <ProductCard productName="AKG K72 Stereo Headphones Black" productId={16} productDiscount={0.10} productImage="https://audioimport.com.ar/wp-content/uploads/2020/06/AKG_K72_SideAngle.png" productPrice={62} productRating={5} productReviews={10} />
+              <ProductCard productName="AKG K72 Stereo Headphones Black" productId={16} productDiscount={0.10} productImage="https://www.akg.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb27386f9/AKG_K72_SideAngle.png?sw=535&sh=535" productPrice={62} productRating={5} productReviews={10} />
             </div>
           </div>
           <p className="text-zinc-300">Hover to toggle suspense</p>

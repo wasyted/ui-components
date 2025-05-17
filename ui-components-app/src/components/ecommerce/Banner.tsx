@@ -25,7 +25,7 @@ export default function Banner(){
         </div>
       </div>
       <div className="flex-1 flex items-center justify-start z-10">
-        <Image className='max-h-64 w-auto' width={556} height={556} alt={'product image'} src={'https://audioimport.com.ar/wp-content/uploads/2020/06/AKG_K72_SideAngle.png'}></Image>
+        <Image className='max-h-64 w-auto' width={556} height={556} alt={'product image'} src={'https://www.akg.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb27386f9/AKG_K72_SideAngle.png?sw=535&sh=535'}></Image>
       </div>
     </div>
   )

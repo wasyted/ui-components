@@ -3,7 +3,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'audioimport.com.ar',
+        hostname: 'www.akg.com',
       },
       {
         protocol: 'https',
